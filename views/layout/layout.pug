@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Aplikasi
+    // Styles
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css')
+    block css
+  body
+    #app
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        a.navbar-brand(href='home') Aplikasi Kompresi
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='home') Home
+            li.nav-item
+              a.nav-link(href='compress') Compress
+            li.nav-item
+              a.nav-link(href='decompress') Decompress
+            li.nav-item
+              a.nav-link(href='aboutme') About Me
+    .container
+      block content
+    // Scripts
+    script(type='text/javascript', src='https://code.jquery.com/jquery-3.3.1.js')
+    script(type='text/javascript', src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
+    block scripts
