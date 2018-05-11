@@ -21,7 +21,7 @@ block scripts
   script(type='text/javascript').
     $('#addmore').on('click', function(e) {
       var makeDiv = $('<div class="form"></div>')
-      var content = $('<input type="file" name="file[]" class="form-control-file"/>')
+      var content = $('<input type="file" name="file" class="form-control-file"/>')
       var removeButton = $('<input type="button" class="remove" value="REMOVE"/>')
       removeButton.on('click', function(e){
         $(this).parent().remove()
